@@ -1,12 +1,29 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net6</TargetFramework>
+		<PackageTargetFallback>portable-net45+win8+wp8+wpa81</PackageTargetFallback>
+		<IncludeBuildOutput>false</IncludeBuildOutput>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
 
-  <ItemGroup>
+	<PropertyGroup>
+		<Authors>Paul Brätz</Authors>
+		<Description>The base RhoMicro Domain model.</Description>
+		<Copyright>2022</Copyright>
+		<PackageTags>Rhomicro</PackageTags>
+		<Version>0.0.1</Version>
+		<PackageId>RhoMicro.Domain</PackageId>
+		<AssemblyName>RhoMicro.Domain</AssemblyName>
+		<RootNamespace>RhoMicro.Domain</RootNamespace>
+		<Company>RhoMicro</Company>
+		<PackageProjectUrl>https://github.com/PaulBraetz/Domain/</PackageProjectUrl>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+	</PropertyGroup>
+
+
+	<ItemGroup>
     <PackageReference Include="RhoMicro.Fort" Version="1.1.1" />
     <PackageReference Include="RhoMicro.ObjectSync" Version="1.1.0">
       <PrivateAssets>all</PrivateAssets>
