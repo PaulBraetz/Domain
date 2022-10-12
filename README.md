@@ -1,6 +1,6 @@
 # RhoMicro.Domain #
 
-RhoMicro.Domain provides two simple base classes for entities in a DDD context. What makes these base classes special is that they employ the ObjectSync synchronization feature in order to synchronize properties of entities that may be separate instances but share the same id.
+RhoMicro.Domain provides a simple base class for entities in a DDD context. What makes this base class special is that it employs the ObjectSync synchronization feature in order to synchronize properties of entities that may be separate instances but share the same id.
 
 ## Features ##
 
