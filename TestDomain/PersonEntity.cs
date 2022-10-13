@@ -19,7 +19,7 @@ namespace TestDomain
 	{
 		public PersonEntity(PersonDto dto) : base(dto)
 		{
-			_name = dto.Name;
+			Name = dto.Name;
 		}
 		public PersonEntity(String name) : base()
 		{
@@ -28,9 +28,14 @@ namespace TestDomain
 			Name = name;
 		}
 
-		[Synchronized]
+		[Synchronized(Observable = true)]
 		private String _name;
-		
+
+		partial void OnPropertyChanged(String propertyName)
+		{
+			base.OnPropertyChanged(propertyName);
+		}
+
 		public override PersonDto ToDto()
 		{
 			return new PersonDto()

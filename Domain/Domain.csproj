@@ -6,6 +6,7 @@
 		<IncludeBuildOutput>false</IncludeBuildOutput>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
 	</PropertyGroup>
 
 	<PropertyGroup>
@@ -13,7 +14,7 @@
 		<Description>The base RhoMicro Domain model.</Description>
 		<Copyright>2022</Copyright>
 		<PackageTags>Rhomicro</PackageTags>
-		<Version>0.0.1</Version>
+		<Version>0.0.2</Version>
 		<PackageId>RhoMicro.Domain</PackageId>
 		<AssemblyName>RhoMicro.Domain</AssemblyName>
 		<RootNamespace>RhoMicro.Domain</RootNamespace>
@@ -21,11 +22,10 @@
 		<PackageProjectUrl>https://github.com/PaulBraetz/Domain/</PackageProjectUrl>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 	</PropertyGroup>
-
-
+	
 	<ItemGroup>
     <PackageReference Include="RhoMicro.Fort" Version="1.1.1" />
-    <PackageReference Include="RhoMicro.ObjectSync" Version="1.1.0">
+    <PackageReference Include="RhoMicro.ObjectSync" Version="1.1.2" NoWarn="NU1605">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
