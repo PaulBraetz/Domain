@@ -53,7 +53,7 @@ namespace RhoMicro.Domain
 		protected void OnPropertyChanged(String propertyName)
 		{
 			propertyName.ThrowIfDefaultOrEmpty(nameof(propertyName));
-
+			LastUpdate = DateTimeOffset.UtcNow;
 			PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
 		}
 	}

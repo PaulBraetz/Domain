@@ -14,7 +14,7 @@
 		<Description>The base RhoMicro Domain model.</Description>
 		<Copyright>2022</Copyright>
 		<PackageTags>Rhomicro</PackageTags>
-		<Version>0.0.2</Version>
+		<Version>0.0.3</Version>
 		<PackageId>RhoMicro.Domain</PackageId>
 		<AssemblyName>RhoMicro.Domain</AssemblyName>
 		<RootNamespace>RhoMicro.Domain</RootNamespace>
