@@ -1,4 +1,6 @@
-﻿namespace RhoMicro.Domain
+﻿using System;
+
+namespace RhoMicro.Domain
 {
 	public interface IDto
 	{
