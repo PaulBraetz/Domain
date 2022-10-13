@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFramework>net6</TargetFramework>
+		<TargetFramework>net6.0</TargetFramework>
 		<PackageTargetFallback>portable-net45+win8+wp8+wpa81</PackageTargetFallback>
 		<IncludeBuildOutput>false</IncludeBuildOutput>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
@@ -14,7 +14,7 @@
 		<Description>The base RhoMicro Domain model.</Description>
 		<Copyright>2022</Copyright>
 		<PackageTags>Rhomicro</PackageTags>
-		<Version>0.0.3</Version>
+		<Version>0.0.4</Version>
 		<PackageId>RhoMicro.Domain</PackageId>
 		<AssemblyName>RhoMicro.Domain</AssemblyName>
 		<RootNamespace>RhoMicro.Domain</RootNamespace>
